@@ -1,0 +1,63 @@
+name: puredrop_mobile_app
+description: "PUREDROP - Aplikasi Membership Isi Ulang Air Minum"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP Client
+  dio: ^5.4.0
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Navigation
+  go_router: ^13.2.0
+
+  # Storage
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.3
+
+  # Charts
+  fl_chart: ^0.68.0
+
+  # Barcode Scanner
+  mobile_scanner: ^5.1.1
+
+  # Notifications
+  flutter_local_notifications: ^17.2.0
+
+  # Health / Smartwatch
+  health: ^10.2.0
+
+  # Environment
+  flutter_dotenv: ^5.1.0
+
+  # Network check
+  connectivity_plus: ^6.0.3
+
+  # Fonts
+  google_fonts: ^6.2.1
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.8
+  riverpod_generator: ^2.4.0
+  custom_lint: ^0.6.4
+  riverpod_lint: ^2.3.10
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - .env.prod
